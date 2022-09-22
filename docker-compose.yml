@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  iti-g111:
+    image: xahmedmahmoudx/iti-g111:ahmedmahmoud
+    container_name: iti-g111
+    ports:
+      - "8080:8000"
