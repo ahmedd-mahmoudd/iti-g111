@@ -1,3 +1,5 @@
+# Release 1.3.1
+* Adding docker-compose file
 # Release 1.3.0
 * Adding Dockerfile to make it run anywhere
 * Modifiying Fullcommands file
