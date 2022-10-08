@@ -7,7 +7,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                
                 echo "$GIT_BRANCH"
                 sh 'docker images -a'
             }
@@ -24,7 +23,7 @@ pipeline {
                 docker build -t xahmedmahmoudx/iti-g111:latest .
                 docker images -a
                 docker push xahmedmahmoudx/iti-g111:latest
-                """, returnStdout: true)
+                """)
             }
         }
     }
