@@ -26,8 +26,8 @@ pipeline {
                 docker images -a
                 docker push xahmedmahmoudx/iti-g111:latest
                 """, returnStdout: true)
+            }
         }
-        
     }
     // post after stages, for entire pipeline, is also an implicit step albeit with explicit config here, unlike implicit checkout stage
     post {
