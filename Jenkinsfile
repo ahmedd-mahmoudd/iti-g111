@@ -7,8 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                cleanWs()
-                checkout scm: [$class: 'GitSCM' ]
+                
                 echo "$GIT_BRANCH"
                 sh 'docker images -a'
             }
