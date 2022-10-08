@@ -17,9 +17,9 @@ pipeline {
             steps {
                 sh (script: """
                 mvn clean package
-                docker build -t xahmedmahmoudx/iti-g111:latest .
+                docker build -t xahmedmahmoudx/iti-g111:ahmedmahmoud .
                 docker images -a
-                docker push xahmedmahmoudx/iti-g111:latest
+                docker push xahmedmahmoudx/iti-g111:ahmedmahmoud
                 """)
             }
         }
