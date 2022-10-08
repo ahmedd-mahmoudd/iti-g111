@@ -22,7 +22,7 @@ pipeline {
                 mvn clean package
                 docker build -t xahmedmahmoudx/iti-g111:latest .
                 docker images -a
-                docker push xahmedmahmoudx/iti-g111:latest
+                
                 """)
             }
         }
